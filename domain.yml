@@ -1,0 +1,113 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - leave
+  - hr_policy
+  - user_info
+  - benefits
+  - training
+  #- faq
+  - chitchat
+
+
+responses:
+  utter_greet:
+  - text: "Hey {name}! How are you?"
+  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a Sahayak, your HR chatbot."
+
+  utter_chitchat/ask_name:
+  - text: "My name is Sahayak!! Your Sabudh HR chatbot"
+
+  utter_chitchat/ask_weather:
+  - text: "It is sunny"
+
+  utter_leave/type:
+  - text: "Total paid leaves are : 24 , casual leaves are :- 12"
+
+  utter_leave/status:
+  - text: "we need access of database for it"
+
+  utter_leave/apply:
+  - text: "here is the link for you to apply for leaves: "
+
+  utter_leave/vacation:
+  - text: "total vacation number is 12 here is the list for this calendar year"
+
+  utter_hr_policy/dress_code:
+  - text: "Dress code is formal business attire"
+
+  utter_hr_policy/notice_period:
+  - text: "Notice period is 60 days"
+
+  utter_hr_policy/code_conduct:
+  - text: "Please find the link for code of conduct:- "
+
+  utter_hr_policy/remote_work:
+  - text: "It is hybrid model with 3 days from office and 2 days from home "
+
+  utter_hr_policy/harassment:
+  - text: "Please find the link of the Sabudh harassment policy:-  "
+
+  utter_hr_policy/anti_discrimination:
+  - text: "Please find the link of the Sabudh anti_discrimination policy:-  "
+
+  utter_hr_policy/probation:
+  - text: "The probation period is 30 days "
+
+  utter_hr_policy/about_company:
+  - text: "Sabudh is IT company "
+
+  utter_benefits/health_insurance:
+  - text: "Please find the link below for health insurance :-  "
+
+  utter_benefits/term_insurance:
+  - text: "Please find the link below for term insurance "
+
+  utter_benefits/pf:
+  - text: "Please find the link below for pf:-  "
+
+  utter_benefits/gratuity:
+  - text: "Please find the link below for gratuity:-  "
+
+  utter_benefits/dental:
+  - text: "Please find the link below for dental insurance:-  "
+
+
+  
+
+
+  
+
+
+  
+    
+
+
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
